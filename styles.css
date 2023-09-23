@@ -1,0 +1,161 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,1000;1,400;1,500;1,600;1,700;1,800;1,1000&display=swap');
+
+
+
+body {
+    background: #F8FAFC;
+    font-family: 'Mulish', sans-serif;
+}
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#signup{
+    top: 50vh;
+    padding: 25px;
+    /* text-align: center; */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.page {
+    display: none;
+    margin: 5rem;
+    width: 444px;
+    height: 537px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.message {
+    color: red;
+}
+
+#profile {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+#signup-form>input{
+    display: flex;
+    width: 352px;
+    height: 36px;
+    padding: 0px 12px;
+    align-items: flex-start;
+    gap: 12px;
+    flex-shrink: 0;
+    
+    border-radius: 6px;
+    border: 1px solid #DEDEDE;
+}
+#signup-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#signup-form>button {
+    display: flex;
+    width: 352px;
+    height: 55.804px;
+    padding: 9px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #F8FAFC;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px; /* 112.5% */
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+
+#profile{
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#success{
+    color: #463EEA;
+}
+#logout-button{
+    width: 352px;
+    height: 55.804px;
+    padding: 9px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px; /* 112.5% */
+    text-transform: uppercase;
+    margin-top: 4rem;
+    
+}
+
+
+
+/* Styles for screens with a maximum width of 768 pixels (typical for phones) */
+@media (max-width: 768px) {
+    /* Add your phone-specific styles here */
+    body {
+        font-size: 16px; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    /* Example: Adjust the width of an element for phones */
+    .example-element {
+        width: 100%; /* Make the element take up the full width of the screen */
+    }
+    #signup{
+        width: 316px;
+        height: 682px;
+        flex-shrink: 0;
+    }
+    #signup-form>button{
+        display: flex;
+        width: 250.523px;
+        height: 48.114px;
+        padding: 9px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+    #signup-form>input{
+        display: flex;
+        width: 250.523px;
+        height: 31.039px;
+        padding: 0px 12px;
+        align-items: flex-start;
+        gap: 12px;
+        flex-shrink: 0;
+        
+    }
+}

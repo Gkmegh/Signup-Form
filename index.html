@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Authentication</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Signup Page -->
+        <div id="signup" class="page">
+            <p>Welcome back! 👋</p>
+            <h2>Signup to Your account</h2>
+            <form id="signup-form">
+                <label for="Name">Your Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="Email">Your Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="Password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+                <label for="Confirm">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <button type="submit">CONTINUE</button>
+            </form>
+            <p id="signup-message" class="message"></p>
+        </div>
+
+        <!-- Profile Page -->
+        <div id="profile" class="page">
+            <h2 id="success">Signup Successful!</h2>
+            <h2>Profile</h2>
+            <img src="./user_1144760.png" alt="profile icon" width="50px" height="50px">
+            <p>Your Name: <span id="profile-username"></span></p>
+            <p> <span id="profile-fullname"></span></p>
+            <p>Your Mail: <span id="profile-email"></span></p>
+            <p>Your Token <span id="profile-random-token"></span></p>
+            <p>Your Password <span id="profile-password"></span></p>
+            <button id="logout-button">Logout</button>
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
